@@ -3,7 +3,7 @@ export default class AnalyzeArray {
     this.array = array;
   }
 
-  length() {
+  getLength() {
     return this.array.length;
   }
 }
