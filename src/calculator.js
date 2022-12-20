@@ -10,4 +10,11 @@ export default class Calculator {
   static multiply(num1, num2) {
     return num1 * num2;
   }
+
+  static divide(num1, num2) {
+    if (num2 === 0) {
+      throw new Error('Divisor is 0');
+    }
+    return Calculator.multiply(num1, 1 / num2);
+  }
 }
