@@ -2,11 +2,11 @@ import AnalyzeArray from '../analyzeArray';
 
 describe('getLength', () => {
   test('Returns length of non-empty array', () => {
-    expect(new AnalyzeArray([1, 6, 3]).getLength()).toBe(3);
+    expect(new AnalyzeArray([1, 6, 3]).length).toBe(3);
   });
 
   test('Returns length of empty array', () => {
-    expect(new AnalyzeArray([]).getLength()).toBe(0);
+    expect(new AnalyzeArray([]).length).toBe(0);
   });
 });
 
