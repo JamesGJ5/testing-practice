@@ -4,6 +4,7 @@ export default class AnalyzeArray {
     this.length = this.getLength();
     this.average = this.getAverage();
     this.min = this.getMin();
+    this.max = this.getMax();
   }
 
   getLength() {
@@ -23,5 +24,12 @@ export default class AnalyzeArray {
       return null;
     }
     return this.array.reduce((min, cur) => (cur < min ? cur : min), Infinity);
+  }
+
+  getMax() {
+    if (this.length === 0) {
+      return null;
+    }
+    return this.array.reduce((max, cur) => (cur > max ? cur : max), -Infinity);
   }
 }

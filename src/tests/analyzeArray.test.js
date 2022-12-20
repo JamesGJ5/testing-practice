@@ -33,3 +33,13 @@ describe('min', () => {
     expect(new AnalyzeArray([]).min).toBeNull();
   });
 });
+
+describe('max', () => {
+  test('Returns 10 for [6, 2, 10]', () => {
+    expect(new AnalyzeArray([6, 2, 10]).max).toBe(10);
+  });
+
+  test('Returns null for empty arrays', () => {
+    expect(new AnalyzeArray([]).max).toBeNull();
+  });
+});
