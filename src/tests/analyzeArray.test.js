@@ -1,6 +1,6 @@
 import AnalyzeArray from '../analyzeArray';
 
-describe('getLength', () => {
+describe('length', () => {
   test('Returns length of non-empty array', () => {
     expect(new AnalyzeArray([1, 6, 3]).length).toBe(3);
   });
