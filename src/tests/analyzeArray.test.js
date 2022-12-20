@@ -23,3 +23,13 @@ describe('average', () => {
     expect(new AnalyzeArray([]).average).toBeNull();
   });
 });
+
+describe('min', () => {
+  test('Returns 2 for [6, 2, 10]', () => {
+    expect(new AnalyzeArray([6, 2, 10]).min).toBe(2);
+  });
+
+  test('Returns null for empty arrays', () => {
+    expect(new AnalyzeArray([]).min).toBeNull();
+  });
+});
