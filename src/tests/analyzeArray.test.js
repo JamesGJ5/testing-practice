@@ -10,16 +10,16 @@ describe('getLength', () => {
   });
 });
 
-// describe('average', () => {
-//   test('Returns 5 for [1, 6, 3]', () => {
-//     expect(new AnalyzeArray([1, 6, 3]).average()).toBe(5);
-//   });
+describe('average', () => {
+  test('Returns 5 for [1, 6, 3]', () => {
+    expect(new AnalyzeArray([4, 6, 5]).average).toBe(5);
+  });
 
-//   test('Does fairly well for floating point numbers', () => {
-//     expect(new AnalyzeArray([1.1, 2.2, 3.3]).average()).toBeCloseTo(2.2);
-//   });
+  test('Does fairly well for floating point numbers', () => {
+    expect(new AnalyzeArray([1.1, 2.2, 3.3]).average).toBeCloseTo(2.2);
+  });
 
-//   test('Returns null for empty arrays', () => {
-//     expect(new AnalyzeArray([]).average()).toBeNull();
-//   });
-// });
+  test('Returns null for empty arrays', () => {
+    expect(new AnalyzeArray([]).average).toBeNull();
+  });
+});
