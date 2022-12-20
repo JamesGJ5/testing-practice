@@ -19,3 +19,13 @@ describe('subtract', () => {
     expect(Calculator.subtract(1.31, 89.12)).toBeCloseTo(-87.81);
   });
 });
+
+describe('multiply', () => {
+  test('Multiplies 2 and 3 to make 6', () => {
+    expect(Calculator.multiply(2, 3)).toBe(6);
+  });
+
+  test('Multiplies floating point numbers fairly well', () => {
+    expect(Calculator.multiply(1.3, 2.5)).toBeCloseTo(3.25);
+  });
+});
