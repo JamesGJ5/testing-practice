@@ -1,0 +1,1 @@
+Exercises uses to learn to test using Jest.
